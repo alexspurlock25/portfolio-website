@@ -17,6 +17,9 @@ export default function BlogPage() {
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">
         read my blog
       </h1>
+      <p className="prose prose-neutral dark:prose-invert">
+        Adding more soon 😁
+      </p>
       {allBlogs
         .sort((a, b) => {
           if (
