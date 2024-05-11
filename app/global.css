@@ -45,6 +45,11 @@ html {
   cursor: pointer;
 }
 
+.home-page-icons {
+  @apply fill-black;
+  @apply dark:fill-white;
+}
+
 .anchor:hover {
   @apply visible;
 }
