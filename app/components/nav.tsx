@@ -9,6 +9,9 @@ const navItems = {
   },
   '/blog': {
     name: 'blog',
+  },
+  'https://sumofme.com/user/alexspur': {
+    name: 'resume'
   }
 };
 

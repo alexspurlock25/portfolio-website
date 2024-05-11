@@ -13,26 +13,34 @@ const links = {
 export default function Page() {
   return (
     <section>
-      <h1 className="font-medium text-2xl mb-8 tracking-tighter text-center">welcome 🫶🏻</h1>
+      {/* <h1 className="font-medium text-2xl mb-8 tracking-tighter text-center">welcome 🫶🏻</h1> */}
       <div className="md:flex items-center">
         <img className="w-60 rounded-full mx-auto shadow-lg" src="./avatar.jpeg" />
         <div className="mt-10 md:mt-0 ml-0 md:ml-10">
-          <div className="flex justify-center space-x-2 my-5 md:my-0 md:justify-normal dark:text-white">
-            {
-              Object.entries(links).map(([name, { link, icon }]) => {
-                return (
-                  <a 
-                    href={link} 
-                    target="_blank" 
-                    dangerouslySetInnerHTML={{__html: icon }}
-                  ></a>
-                )
-              })
-            }
+          <div className="flex justify-center md:justify-start space-x-2 dark:text-white mb-5">
+              {
+                Object.entries(links).map(([name, { link, icon }]) => {
+                  return (
+                    <a 
+                      href={link} 
+                      target="_blank" 
+                      dangerouslySetInnerHTML={{__html: icon }}
+                    ></a>
+                  )
+                })
+              }
           </div>
           <p className="prose prose-neutral dark:prose-invert text-center md:text-left">
             Hi! Welcome to my website! I am a Data Engineer with a Bachelor's degree in Software Engineering. I am very passionate about crafting innovative iOS and Android applications to bring ideas to life.
           </p>
+          <div className="space-y-2 mt-5">
+            <a 
+              href="/work"
+              className="bg-black dark:bg-white rounded-2xl py-4 px-7 text-lg shadow-xl hover:shadow-lg text-neutral-100 dark:text-neutral-800 flex justify-between items-center"
+            >
+              <span>Check out my published apps</span><span>🛠️</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
