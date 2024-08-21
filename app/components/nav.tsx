@@ -10,19 +10,16 @@ const navItems = {
   '/blog': {
     name: 'blog',
   },
-  'https://sumofme.com/user/alexspur': {
-    name: 'resume'
-  }
+  'https://sumofme.com/user/alexspurlock': {
+    name: 'resume',
+  },
 };
 
 export function Navbar() {
   return (
     <aside className="mb-16">
       <div>
-        <nav
-          className="flex justify-center"
-          id="nav"
-        >
+        <nav className="flex justify-center" id="nav">
           <div className="flex flex-row">
             {Object.entries(navItems).map(([path, { name }]) => {
               return (
