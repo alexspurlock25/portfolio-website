@@ -25,6 +25,7 @@ export default function Page() {
                       href={link} 
                       target="_blank" 
                       dangerouslySetInnerHTML={{__html: icon }}
+                      key={link}
                     ></a>
                   )
                 })

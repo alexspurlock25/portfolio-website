@@ -22,7 +22,7 @@ export default function Page() {
         {
           Object.entries(work).map(([project, { title, summary, innerHTML }]) => {
             return (
-              <div className="my-10 border-b">
+              <div className="my-10 border-b" key={title}>
                 <h1>{title}</h1>
                 <div>
                   {summary}
