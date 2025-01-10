@@ -1,5 +1,4 @@
 import fs from 'fs';
-import { pages } from 'next/dist/build/templates/app-page';
 import path from 'path';
 
 type Metadata = {
